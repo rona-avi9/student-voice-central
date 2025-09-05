@@ -56,9 +56,9 @@ export function AppSidebar() {
               <GraduationCap className="h-6 w-6 text-primary" />
             </div>
             {!isCollapsed && (
-              <div className="text-primary-foreground">
+              <div className="text-white">
                 <h2 className="text-lg font-bold">GRIEVANCE</h2>
-                <p className="text-xs text-primary-foreground/80">MONITORING SYSTEM</p>
+                <p className="text-xs text-white/80">MONITORING SYSTEM</p>
               </div>
             )}
           </div>
@@ -76,8 +76,8 @@ export function AppSidebar() {
                       className={({ isActive }) => `
                         flex items-center gap-3 px-3 py-2 rounded-md transition-colors
                         ${isActive 
-                          ? "bg-primary-foreground text-primary font-medium" 
-                          : "text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground"
+                          ? "bg-white text-primary font-medium" 
+                          : "text-white hover:bg-white/10 hover:text-white"
                         }
                       `}
                     >
@@ -94,7 +94,7 @@ export function AppSidebar() {
         {/* Logout Section */}
         <div className="mt-auto p-4 border-t border-primary-foreground/20">
           <SidebarMenuButton asChild>
-            <button className="w-full flex items-center gap-3 px-3 py-2 rounded-md text-primary-foreground/80 hover:bg-primary-foreground/10 hover:text-primary-foreground transition-colors">
+            <button className="w-full flex items-center gap-3 px-3 py-2 rounded-md text-white hover:bg-white/10 hover:text-white transition-colors">
               <LogOut className="h-5 w-5" />
               {!isCollapsed && <span>Log out</span>}
             </button>
