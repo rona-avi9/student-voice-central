@@ -11,6 +11,8 @@ import Staff from "./pages/Staff";
 import Students from "./pages/Students";
 import Grievances from "./pages/Grievances";
 import Certificates from "./pages/Certificates";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
               <Header />
               <main className="flex-1 p-6 bg-background">
                 <Routes>
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/signup" element={<Signup />} />
                   <Route path="/" element={<Dashboard />} />
                   <Route path="/staff" element={<Staff />} />
                   <Route path="/students" element={<Students />} />
